@@ -26,6 +26,9 @@ Route::get('/login3', function () {
 Route::get('/login4', function () {
     return view('login4');
 });
+Route::get('/homepage', function () {
+    return view('homepage');
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
