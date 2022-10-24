@@ -29,6 +29,21 @@ Route::get('/login4', function () {
 Route::get('/homepage', function () {
     return view('homepage');
 });
+Route::get('/blog', function () {
+    return view('blog');
+});
+Route::get('/card', function () {
+    return view('card');
+});
+Route::get('/ultra-lite', function () {
+    return view('ultra-lite');
+});
+Route::get('/client-menu-slider', function () {
+    return view('client-menu-slider');
+});
+Route::get('/customize-recipe', function () {
+    return view('customize-recipe');
+});
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
